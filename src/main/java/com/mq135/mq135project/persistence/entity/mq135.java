@@ -10,35 +10,35 @@ public class mq135 {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    private Integer id_mq135_db;
+    private Integer idMq135;
 
     @Column(name = "data")
-    private String data_mq135_db;
+    private Integer dataMq135;
 
     @Column(name = "date")
-    private LocalDateTime date_mq135_db;
+    private LocalDateTime dateMq135;
 
-    public Integer getId_mq135_db() {
-        return id_mq135_db;
+    public Integer getIdMq135() {
+        return idMq135;
     }
 
-    public void setId_mq135_db(Integer id_mq135_db) {
-        this.id_mq135_db = id_mq135_db;
+    public void setIdMq135(Integer idMq135) {
+        this.idMq135 = idMq135;
     }
 
-    public String getData_mq135_db() {
-        return data_mq135_db;
+    public Integer getDataMq135() {
+        return dataMq135;
     }
 
-    public void setData_mq135_db(String data_mq135_db) {
-        this.data_mq135_db = data_mq135_db;
+    public void setDataMq135(Integer dataMq135) {
+        this.dataMq135 = dataMq135;
     }
 
-    public LocalDateTime getDate_mq135_db() {
-        return date_mq135_db;
+    public LocalDateTime getDateMq135() {
+        return dateMq135;
     }
 
-    public void setDate_mq135_db(LocalDateTime date_mq135_db) {
-        this.date_mq135_db = date_mq135_db;
+    public void setDateMq135(LocalDateTime dateMq135) {
+        this.dateMq135 = dateMq135;
     }
 }

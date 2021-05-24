@@ -17,4 +17,15 @@ public class mq135Service {
         return mq135_repository.getAll();
     }
 
+    public Mq135Domain getLastRecord() {
+        return mq135_repository.getLastRecord();
+    }
+
+    public Mq135Domain findById(int id) {
+        return mq135_repository.findById(id);
+    }
+
+    public List<Mq135Domain> getLastTwentyRecords() {
+        return mq135_repository.getLastTwentyRecords();
+    }
 }

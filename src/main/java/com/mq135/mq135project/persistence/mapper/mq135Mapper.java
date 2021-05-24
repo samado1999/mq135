@@ -12,9 +12,9 @@ import java.util.List;
 public interface mq135Mapper {
 
     @Mappings({
-            @Mapping(source = "id_mq135_db", target = "id_mq135"),
-            @Mapping(source = "data_mq135_db", target = "data_mq135"),
-            @Mapping(source = "date_mq135_db", target = "date_mq135")
+            @Mapping(source = "idMq135", target = "id_mq135"),
+            @Mapping(source = "dataMq135", target = "data_mq135"),
+            @Mapping(source = "dateMq135", target = "date_mq135")
     })
     Mq135Domain toMq135Domain(mq135 mq_135);
     List<Mq135Domain> toMq135Domains(List<mq135> mq_135);

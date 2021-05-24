@@ -5,7 +5,7 @@ import java.time.LocalDateTime;
 public class Mq135Domain {
 
     private int id_mq135;
-    private String data_mq135;
+    private int data_mq135;
     private LocalDateTime date_mq135;
 
     public int getId_mq135() {
@@ -16,11 +16,11 @@ public class Mq135Domain {
         this.id_mq135 = id_mq135;
     }
 
-    public String getData_mq135() {
+    public int getData_mq135() {
         return data_mq135;
     }
 
-    public void setData_mq135(String data_mq135) {
+    public void setData_mq135(int data_mq135) {
         this.data_mq135 = data_mq135;
     }
 
