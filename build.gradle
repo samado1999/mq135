@@ -18,6 +18,7 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	//implementation 'io.springfox:springfox-swagger2:2.9.2'
 	//implementation 'io.springfox:springfox-swagger-ui:2.9.2'
+	implementation 'com.github.mervick:aes-everywhere-java:1.2.7'
 
 	runtimeOnly 'mysql:mysql-connector-java'
 
@@ -25,6 +26,13 @@ dependencies {
 	annotationProcessor 'org.mapstruct:mapstruct-processor:1.4.2.Final'
 
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+	// define a BOM and its version
+	implementation(platform("com.squareup.okhttp3:okhttp-bom:4.9.0"))
+
+	// define any required OkHttp artifacts without version
+	implementation("com.squareup.okhttp3:okhttp")
+	implementation("com.squareup.okhttp3:logging-interceptor")
 }
 
 test {
