@@ -1,1 +1,1 @@
-web: java -jar -Dspring.profiles.active=pdn build/libs/mq135.jar
+web: java -jar -D spring.profiles.active=pdn build/libs/mq135.jar
